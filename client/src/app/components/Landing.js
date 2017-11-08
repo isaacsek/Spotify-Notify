@@ -7,9 +7,9 @@ class Landing extends Component {
         return (
             <div style={{textAlign:'center'}}>
                 <h1>
-                    Emaily
+                    Spotify-Notify
                 </h1>
-                Collect feedback from your users
+                Sign up for notifications when artist, or playlist you follow add new content. Daily.
             </div>
         );
     }

@@ -10,7 +10,8 @@ class Header extends Component {
             case null:
                 return;
             case false:
-                return <li><a href="/auth/google">Login With Google</a></li>;
+                //return <li><a href="/auth/google">Login With Google</a></li>;
+                return <li><a href="/auth/spotify">Login With Spotify</a></li>;
             default:
             return [
                 <li key="1"><Payments /></li>,
@@ -24,12 +25,12 @@ class Header extends Component {
         //console.log(this.props);
         return (
             <nav>
-                <div className="nav-wrapper">
+                <div className="nav-wrapper light-green">
                     <Link to={this.props.auth ? "/surveys" : "/"}
                         className="left brand-logo"
                         style={{marginLeft: '10px'}}
                     >
-                        Emaily
+                        Spotify-Notify
                     </Link>
                     <ul className="right">
                         {this.renderContent()}

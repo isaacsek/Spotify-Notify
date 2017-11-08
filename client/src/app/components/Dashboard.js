@@ -10,7 +10,7 @@ class Dashboard extends Component {
                 <h1>
                     Dashboard
                 </h1>
-                Collect feedback from your users
+                User Info: {JSON.stringify(this.props.auth)}
                 <div className="fixed-action-btn">
                     <Link to="/surveys/new" className="btn-floating btn-large red">
                         <i className="material-icons">add</i>

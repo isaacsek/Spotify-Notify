@@ -6,6 +6,9 @@
     "/auth/google": {
       "target": "httlp://localhost:5000"
     },
+    "/auth/spotify": {
+      "target": "httlp://localhost:5000"
+    },
     "/api/*": {
       "target": "httlp://localhost:5000"
     }

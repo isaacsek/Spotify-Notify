@@ -3,6 +3,7 @@ const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
     googleID: String,
+    spotifyID: String,
     credits: { type: Number, default: 0 }
 });
 
