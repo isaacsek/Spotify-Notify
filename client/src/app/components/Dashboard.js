@@ -3,6 +3,15 @@ import { connect } from "react-redux";
 import {Link} from "react-router-dom";
 
 class Dashboard extends Component {
+    componentWillMount() {
+        console.log("here", this.props.auth);
+    }
+
+    renderID() {
+        if(this.props.auth) {
+            return this.props.auth.spotifyID;
+        };
+    }
 
     render() {
         return (
@@ -10,7 +19,10 @@ class Dashboard extends Component {
                 <h1>
                     Dashboard
                 </h1>
-                User Info: {JSON.stringify(this.props.auth)}
+                <div>
+                    Spotify ID = {this.renderID()}
+                </div>
+
                 <div className="fixed-action-btn">
                     <Link to="/surveys/new" className="btn-floating btn-large red">
                         <i className="material-icons">add</i>
